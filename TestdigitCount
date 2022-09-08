@@ -1,0 +1,25 @@
+package com.decision.pll;
+
+import java.util.Scanner;
+
+import com.decision.bll.DigitsCount;
+
+public class TestDigitsCount {
+	
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in);
+
+		DigitsCount cd = new DigitsCount();
+		
+		System.out.println("Enter a number :");
+		int num=input.nextInt();
+		
+		if(num>0){
+			System.out.println("Total Digits : "+ cd.DigitsCount(num));
+		}
+		else
+			System.out.println("Please enter a positive number");
+	}
+
+
+}
